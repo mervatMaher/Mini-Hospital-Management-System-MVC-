@@ -1,0 +1,24 @@
+﻿@model List<Doctor>
+
+<!DOCTYPE html>
+<head>
+  
+    <link href="/css/card.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+</head>
+
+<div class="container">
+    <div class="d-flex flex-wrap">
+
+        @foreach (var Doctor in Model)
+        {
+            <div class="card m-2" style="width: 18rem;">
+                <img src="/images/@Doctor.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@Doctor.Name</h5>
+                    <p class="card-text">@Doctor.Specialization</p>
+                    <a href="/Doctor/BookAppointment?DoctorId=@Doctor.Id" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

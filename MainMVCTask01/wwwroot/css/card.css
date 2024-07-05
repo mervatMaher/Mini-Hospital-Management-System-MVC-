@@ -1,0 +1,18 @@
+﻿.card {
+    width: 18rem;
+    min-height: 25rem; /* Adjust this value as needed */
+}
+
+.card-img-top {
+    height: 200px; /* Adjust this value as needed */  
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    flex-grow: 1;
+}
